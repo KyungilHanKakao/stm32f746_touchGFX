@@ -118,6 +118,10 @@
 #define LWIP_PLATFORM_DIAG(x) do {printf x;} while(0)
 #define LWIP_DEBUG 1  // Enable lwIP debugging
 
+#define MEM_SIZE                (70 * 1024)
+#define PBUF_POOL_SIZE          16
+#define TCP_WND                 (4 * TCP_MSS)
+
 /* USER CODE END 1 */
 
 #ifdef __cplusplus
